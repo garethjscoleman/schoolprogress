@@ -26,6 +26,7 @@ $scope.$watch('cohort',function(){
 
 $scope.factor = 50*4/Math.sqrt($scope.cohort)
   $scope.myStyle2.width=$scope.factor+'%';
+   $scope.myStyle.width=  (0.5*(($scope.factor/4))*($scope.score+5))+'%';
  
 });
   
