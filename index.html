@@ -1,23 +1,30 @@
 <!doctype html>
-<html>
+<html ng-app="school_progrees">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Schoolprogress by garethjscoleman</title>
 
     <meta name="viewport" content="width=device-width">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.1.4/angular.js"></script>
+    <script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.3.0.js"></script>
+    <script src="schoolprogress.js"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>School Progress</h1>
-
-
-
-       
+    <div ng-controller="SchoolProgressCtrl">
+        <div class="row">
+          <div class="cell">
+            <input type="number" ng-model="score" >
+            <span>{{score}}</span>
+          </div>
+        </div>
+    </div>
+ 
     
   </body>
 </html>
