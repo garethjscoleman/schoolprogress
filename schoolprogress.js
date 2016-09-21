@@ -2,7 +2,7 @@ angular.module('school_progress', ['ui.bootstrap']);
 
 function SchoolProgressCtrl($scope) {
  $scope.myStyle={'width':'0%'};
- $scope.myStyle2={'width':'50%'};
+ $scope.myStyle2={'width':'50%','float':'left'};
 
  $scope.left25={'width':'2.5%','float':'left','background-image':'linear-gradient(to right, white, rgb(220,220,220))'};
  $scope.left75={'width':'7.5%','float':'left','background-image':'linear-gradient(to right, rgb(220,220,220), rgb(180,180,180))'};
