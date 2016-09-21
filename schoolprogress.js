@@ -1,7 +1,7 @@
 angular.module('school_progress', ['ui.bootstrap']);
 
 function SchoolProgressCtrl($scope) {
- scope.myStyle={'width':'10%'};
+ $scope.myStyle={'width':'10%'};
  $scope.cohort=25;
      $scope.score=0;
   
