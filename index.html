@@ -22,16 +22,6 @@
           
         </div>
           
-        <div class="row">
-          <div class="span4 ">
-            <input type="number" ng-model="score" min=-5 max=5 >
-            <span>{{score}}</span>
-          </div>
-          <div class="span4 ">
-            <input type="number" ng-model="cohort" min=16 max=500 >
-            <span>{{cohort}}</span>
-          </div>
-        </div>
         <div class="row bigrow" >
           <div ng-style="myStyle">&nbsp;</div>
           <div class="bigrow" ng-style="myStyle2">
@@ -52,9 +42,20 @@
           <div class="bigrow" ng-style="right75">&nbsp;</div>
           <div class="bigrow" ng-style="right25">&nbsp;</div>
         </div>
-          
+     
+     <div class="row">
+          <div class="span4 ">
+            <input type="number" ng-model="score" min=-5 max=5 step=0.1>
+            <span>{{score}}</span>
+          </div>
+          <div class="span4 ">
+            <input type="number" ng-model="cohort" min=16 max=500  >
+            <span>{{cohort}}</span>
+          </div>
+        </div>
+     
     </div>
  
-    
+     
   </body>
 </html>
