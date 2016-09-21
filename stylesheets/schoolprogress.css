@@ -1,7 +1,1 @@
-.2point5left{
-background-image:
-    linear-gradient(
-      to right, 
-      rgba(0,0,0,0), rgba(0,0,0,10)
-    );
-}
+.bigrow {height:50px;}
