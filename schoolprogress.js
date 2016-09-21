@@ -24,13 +24,13 @@ $scope.factor=50;
 
 $scope.$watch('cohort',function(){
 
-$scope.factor = 50*5/Math.sqrt($scope.cohort)
+$scope.factor = 50*4/Math.sqrt($scope.cohort)
   $scope.myStyle2.width=factor+'%';
  
 });
   
 $scope.$watch('score',function(){
- $scope.myStyle.width=  (($scope.factor/5)*($scope.score+5))+'%';
+ $scope.myStyle.width=  (0.5*(($scope.factor/4))*($scope.score+5))+'%';
  
 });
  
