@@ -13,7 +13,7 @@ $scope.right25={'width':'2.5%','background-image':'linear-gradient(to left, whit
      $scope.score=0;
   
 $scope.$watch('score',function(){
- $scope.myStyle.width=$scope.score+'%';
+ $scope.myStyle.width=($scope.score+10)+'%';
  
 });
  
