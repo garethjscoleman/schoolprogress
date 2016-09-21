@@ -24,11 +24,11 @@
           
         <div class="row">
           <div class="span4 ">
-            <input type="number" ng-model="score" >
+            <input type="number" ng-model="score" min=-5 max=5 >
             <span>{{score}}</span>
           </div>
           <div class="span4 ">
-            <input type="number" ng-model="cohort" >
+            <input type="number" ng-model="cohort" min=10 max=500 >
             <span>{{cohort}}</span>
           </div>
         </div>
