@@ -20,16 +20,17 @@ $scope.rright25={'width':'2.5%','float':'left','background-image':'linear-gradie
 
  $scope.cohort=25;
   $scope.score=0;
+$scope.factor=50;
 
 $scope.$watch('cohort',function(){
 
-var factor = 50*5/Math.sqrt($scope.cohort)
+$scope.factor = 50*5/Math.sqrt($scope.cohort)
   $scope.myStyle2.width=factor+'%';
  
 });
   
 $scope.$watch('score',function(){
- $scope.myStyle.width=(10*($scope.score+5))+'%';
+ $scope.myStyle.width=  (($scope.factor/5)*($scope.score+5))+'%';
  
 });
  
