@@ -6,7 +6,7 @@ function SchoolProgressCtrl($scope) {
      $scope.score=0;
   
 $scope.$watch('score',function(){
- $scope.myStyle={'width':$scope.score};
+ $scope.myStyle={'width':$scope.score&'%'};
  
 });
  
