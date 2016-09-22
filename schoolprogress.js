@@ -28,12 +28,12 @@ $scope.$watch('cohort',function(){
 
 $scope.factor = 50*7/Math.sqrt($scope.cohort)
   $scope.myStyle2.width=$scope.factor+'%';
-   $scope.myStyle.margin-left=  (0.5*(100-$scope.factor))*(($scope.score+sigma)/sigma)+'%';
+   $scope.myStyle['margin-left']=  (0.5*(100-$scope.factor))*(($scope.score+sigma)/sigma)+'%';
  
 });
   
 $scope.$watch('score',function(){
-   $scope.myStyle.margin-left=  (0.5*(100-$scope.factor))*(($scope.score+sigma)/sigma)+'%';
+   $scope.myStyle.['margin-left']=  (0.5*(100-$scope.factor))*(($scope.score+sigma)/sigma)+'%';
  
 });
  
