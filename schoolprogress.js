@@ -1,6 +1,7 @@
 angular.module('school_progress', ['ui.bootstrap']);
 
 function SchoolProgressCtrl($scope) {
+ //always make this even
  var range=20;
  var sigma = 6;
  $scope.numberline=[];
@@ -11,7 +12,7 @@ function SchoolProgressCtrl($scope) {
  }
  $scope.numberlinestyle= {
     'float': 'left',
-    'width': ((range+1)/2) + '%',
+    'width': (100/(range+1)) + '%',
     'text-align': 'center',
 };
  $scope.myStyle={'margin-left':'0%'};
