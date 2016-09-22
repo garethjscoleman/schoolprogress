@@ -6,7 +6,7 @@ function SchoolProgressCtrl($scope) {
  var sigma = 6;
  $scope.numberline=[];
  var iloop=-range/2
- while (iloop<=range){
+ while (iloop<=(range/2)){
   $scope.numberline.push(iloop);
   iloop++
  }
