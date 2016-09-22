@@ -40,7 +40,7 @@ $scope.rright25={'width':'16%','float':'left','background-image':'linear-gradien
 $scope.marginforschoolbarcontainer=50;
 $scope.adjustmentforcohortsize =(5/Math.sqrt($scope.cohort));
 $scope.widthofschoolbar = 100*(2*(sigma)*$scope.adjustmentforcohortsize/(range+1))   ;
- $scope.marginforschoolbarcontainer= (100*(((range+1)/2)-$scope.score)/range)-($scope.widthofschoolbar/2);
+ $scope.marginforschoolbarcontainer= (100*(((range+1)/2)+$scope.score)/range)-($scope.widthofschoolbar/2);
 
 $scope.$watch('cohort',function(){
 
@@ -48,7 +48,7 @@ $scope.$watch('cohort',function(){
  $scope.widthofschoolbar = 100*(2*(sigma)*$scope.adjustmentforcohortsize/(range+1))   ;
  $scope.myStyle2.width=$scope.widthofschoolbar+'%';
    
- $scope.marginforschoolbarcontainer= (100*(((range+1)/2)-$scope.score)/(range+1))-($scope.widthofschoolbar/2);
+ $scope.marginforschoolbarcontainer= (100*(((range+1)/2)+$scope.score)/(range+1))-($scope.widthofschoolbar/2);
  $scope.myStyle['margin-left']=   $scope.marginforschoolbarcontainer+'%';
  
 });
