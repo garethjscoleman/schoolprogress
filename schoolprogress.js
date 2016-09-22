@@ -14,6 +14,9 @@ function SchoolProgressCtrl($scope) {
     'float': 'left',
     'width': (100/(range+1)) + '%',
     'text-align': 'center',
+    'border-top-color':'black',
+    'border-top-style':'solid',
+    'border-top-width':'2px'
 };
  $scope.myStyle={'margin-left':'0%'};
  $scope.myStyle2={'width':'50%','float':'left'};
