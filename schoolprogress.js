@@ -54,7 +54,7 @@ $scope.$watch('cohort',function(){
 });
   
 $scope.$watch('score',function(){
-  $scope.marginforschoolbarcontainer= (100*(((range+1)/2)-$scope.score)/(range+1))-($scope.widthofschoolbar/2);
+  $scope.marginforschoolbarcontainer= (100*(((range+1)/2)+$scope.score)/(range+1))-($scope.widthofschoolbar/2);
    $scope.myStyle['margin-left']=  (0.5*(100-$scope.marginforschoolbarcontainer))*(($scope.score+((range+1)/2))/((range+1)/2))+'%';
  
 });
