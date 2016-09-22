@@ -46,14 +46,15 @@ $scope.$watch('cohort',function(){
 
  $scope.adjustmentforcohortsize =(6/Math.sqrt($scope.cohort));
  $scope.widthofschoolbar = 100*(2*(sigma)*$scope.adjustmentforcohortsize/(range+1))   ;
- $scope.marginforschoolbarcontainer= (100*(((range+1)/2)-$scope.score)/range)-($scope.widthofschoolbar/2);
-  $scope.myStyle2.width=$scope.marginforschoolbarcontainer+'%';
-  
-   $scope.myStyle['margin-left']=  (0.5*(100-$scope.marginforschoolbarcontainer))*(($scope.score+((range+1)/2))/((range+1)/2))+'%';
+ $scope.myStyle2.width=$scope.widthofschoolbar+'%';
+   
+ $scope.marginforschoolbarcontainer= (100*(((range+1)/2)-$scope.score)/(range+1)-($scope.widthofschoolbar/2);
+ $scope.myStyle['margin-left']=   $scope.marginforschoolbarcontainer+'%';
  
 });
   
 $scope.$watch('score',function(){
+  $scope.marginforschoolbarcontainer= (100*(((range+1)/2)-$scope.score)/(range+1)-($scope.widthofschoolbar/2);
    $scope.myStyle['margin-left']=  (0.5*(100-$scope.marginforschoolbarcontainer))*(($scope.score+((range+1)/2))/((range+1)/2))+'%';
  
 });
