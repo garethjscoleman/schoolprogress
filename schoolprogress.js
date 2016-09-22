@@ -3,7 +3,7 @@ angular.module('school_progress', ['ui.bootstrap']);
 function SchoolProgressCtrl($scope) {
  //always make this even
  var range=20;
- var sigma = 3;
+ var sigma = 4;
  $scope.numberline=[];
  var iloop=-range/2
  while (iloop<=(range/2)){
