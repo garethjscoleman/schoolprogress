@@ -3,7 +3,7 @@ angular.module('school_progress', ['ui.bootstrap']);
 function SchoolProgressCtrl($scope) {
  var range=20;
  var sigma = 6;
- $scope.myStyle={'width':'0%','float':'left'};
+ $scope.myStyle={'margin':'0%'};
  $scope.myStyle2={'width':'50%','float':'left'};
 
  $scope.left25={'width':'16%','float':'left','background-image':'linear-gradient(to right, white, rgb(235,235,235))'};
@@ -28,12 +28,12 @@ $scope.$watch('cohort',function(){
 
 $scope.factor = 50*7/Math.sqrt($scope.cohort)
   $scope.myStyle2.width=$scope.factor+'%';
-   $scope.myStyle.width=  (0.5*(100-$scope.factor))*(($scope.score+sigma)/sigma)+'%';
+   $scope.myStyle.margin=  (0.5*(100-$scope.factor))*(($scope.score+sigma)/sigma)+'%';
  
 });
   
 $scope.$watch('score',function(){
-   $scope.myStyle.width=  (0.5*(100-$scope.factor))*(($scope.score+sigma)/sigma)+'%';
+   $scope.myStyle.margin=  (0.5*(100-$scope.factor))*(($scope.score+sigma)/sigma)+'%';
  
 });
  
