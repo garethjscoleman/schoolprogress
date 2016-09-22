@@ -7,10 +7,10 @@ function SchoolProgressCtrl($scope) {
  $scope.myStyle2={'width':'50%','float':'left'};
 
  $scope.left25={'width':'16%','float':'left','background-image':'linear-gradient(to right, white, rgb(235,235,235))'};
- $scope.left75={'width':'17%','float':'left','background-image':'linear-gradient(to right, rgb(235,235,235), rgb(210,210,210))'};
-$scope.left40={'width':'17%','float':'left','background-image':'linear-gradient(to right, rgb(210,210,210), rgb(130,130,130))'};
-$scope.right40={'width':'17%','float':'left','background-image':'linear-gradient(to left, rgb(210,210,210), rgb(130,130,130))'};
-$scope.right75={'width':'17%','float':'left','background-image':'linear-gradient(to left, rgb(235,235,235), rgb(210,210,210))'};
+ $scope.left75={'width':'17%','float':'left','background-image':'linear-gradient(to right, rgb(235,235,235), rgb(190,190,190))'};
+$scope.left40={'width':'17%','float':'left','background-image':'linear-gradient(to right, rgb(190,190,190), rgb(130,130,130))'};
+$scope.right40={'width':'17%','float':'left','background-image':'linear-gradient(to left, rgb(190,190,190), rgb(130,130,130))'};
+$scope.right75={'width':'17%','float':'left','background-image':'linear-gradient(to left, rgb(235,235,235), rgb(190,190,190))'};
 $scope.right25={'width':'16%','float':'left','background-image':'linear-gradient(to left, white, rgb(235,235,235))'};
 
 $scope.rleft25={'width':'16%','float':'left','background-image':'linear-gradient(to right, white, rgb(235,0,235))'};
