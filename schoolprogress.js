@@ -3,7 +3,7 @@ angular.module('school_progress', ['ui.bootstrap']);
 function SchoolProgressCtrl($scope) {
  //always make this even
  var range=20;
- var sigma = 6;
+ var sigma = 3;
  $scope.numberline=[];
  var iloop=-range/2
  while (iloop<=(range/2)){
@@ -41,8 +41,9 @@ $scope.factor=50;
 
 $scope.$watch('cohort',function(){
 
-$scope.factor = 50*7/Math.sqrt($scope.cohort)
+$scope.factor = 50*sigma/Math.sqrt($scope.cohort)
   $scope.myStyle2.width=$scope.factor+'%';
+  
    $scope.myStyle['margin-left']=  (0.5*(100-$scope.factor))*(($scope.score+sigma)/sigma)+'%';
  
 });
