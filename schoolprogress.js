@@ -44,12 +44,12 @@ $scope.$watch('cohort',function(){
 $scope.factor = 50*sigma/Math.sqrt($scope.cohort)
   $scope.myStyle2.width=$scope.factor+'%';
   
-   $scope.myStyle['margin-left']=  (0.5*(100-$scope.factor))*(($scope.score+sigma)/sigma)+'%';
+   $scope.myStyle['margin-left']=  (0.5*(100-$scope.factor))*(($scope.score+(range/2)))/(range/2)))+'%';
  
 });
   
 $scope.$watch('score',function(){
-   $scope.myStyle['margin-left']=  (0.5*(100-$scope.factor))*(($scope.score+sigma)/sigma)+'%';
+   $scope.myStyle['margin-left']=  (0.5*(100-$scope.factor))*(($scope.score+(range/2)))/(range/2)))+'%';
  
 });
  
