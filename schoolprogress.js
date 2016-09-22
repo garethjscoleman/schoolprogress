@@ -16,7 +16,8 @@ function SchoolProgressCtrl($scope) {
     'text-align': 'center',
     'border-top-color':'black',
     'border-top-style':'solid',
-    'border-top-width':'2px'
+    'border-top-width':'2px',
+    'font-size':'125%'
 };
  $scope.myStyle={'margin-left':'0%'};
  $scope.myStyle2={'width':'50%','float':'left'};
