@@ -6,7 +6,7 @@ function SchoolProgressCtrl($scope) {
  $scope.numberline=[];
  var iloop=-range/2
  while (iloop<=range){
-  numberline.push(iloop);
+  $scope.numberline.push(iloop);
   iloop++
  }
  $scope.numberlinestyle= {
