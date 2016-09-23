@@ -3,7 +3,7 @@ angular.module('school_progress', ['ui.bootstrap']);
 function SchoolProgressCtrl($scope) {
  //always make this even
  var range=20;
- var sigma = 4;
+ $scope.sigma = 3;
  $scope.numberline=[];
  var iloop=-range/2
  while (iloop<=(range/2)){
@@ -40,13 +40,13 @@ $scope.rright25={'width':'16%','float':'left','background-image':'linear-gradien
   $scope.score=0;
 $scope.marginforschoolbarcontainer=50;
 $scope.adjustmentforcohortsize =(5/Math.sqrt($scope.cohort));
-$scope.widthofschoolbar = 100*(2*(sigma)*$scope.adjustmentforcohortsize/(range+1))   ;
+$scope.widthofschoolbar = 100*(2*($scope.sigma)*$scope.adjustmentforcohortsize/(range+1))   ;
  $scope.marginforschoolbarcontainer= (100*(((range+1)/2)+$scope.score)/range)-($scope.widthofschoolbar/2);
 
 $scope.$watch('cohort',function(){
 
  $scope.adjustmentforcohortsize =(6/Math.sqrt($scope.cohort));
- $scope.widthofschoolbar = 100*(2*(sigma)*$scope.adjustmentforcohortsize/(range+1))   ;
+ $scope.widthofschoolbar = 100*(2*($scope.sigma)*$scope.adjustmentforcohortsize/(range+1))   ;
  $scope.myStyle2.width=$scope.widthofschoolbar+'%';
    
  $scope.marginforschoolbarcontainer= (100*(((range+1)/2)+$scope.score)/(range+1))-($scope.widthofschoolbar/2);
