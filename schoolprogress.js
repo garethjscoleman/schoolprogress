@@ -4,6 +4,8 @@ function SchoolProgressCtrl($scope) {
  //always make this even
  var range=20;
  $scope.sigma = 3;
+ $scope.sigma2 = 6;
+
  $scope.numberline=[];
  var iloop=-range/2
  while (iloop<=(range/2)){
@@ -43,23 +45,34 @@ $scope.adjustmentforcohortsize =(5/Math.sqrt($scope.cohort));
 $scope.widthofschoolbar = 100*(2*($scope.sigma)*$scope.adjustmentforcohortsize/(range+1))   ;
  $scope.marginforschoolbarcontainer= (100*(((range+1)/2)+$scope.score)/range)-($scope.widthofschoolbar/2);
 
-$scope.$watch('cohort',function(){
-
- $scope.adjustmentforcohortsize =(6/Math.sqrt($scope.cohort));
+$scope.recalc= function(){
+ 
+  $scope.adjustmentforcohortsize =($scope.sigma2/Math.sqrt($scope.cohort));
  $scope.widthofschoolbar = 100*(2*($scope.sigma)*$scope.adjustmentforcohortsize/(range+1))   ;
  $scope.myStyle2.width=$scope.widthofschoolbar+'%';
    
  $scope.marginforschoolbarcontainer= (100*(((range+1)/2)+$scope.score)/(range+1))-($scope.widthofschoolbar/2);
  $scope.myStyle['margin-left']=   $scope.marginforschoolbarcontainer+'%';
  $scope.myStyle['margin-right']=   (0-$scope.marginforschoolbarcontainer)+'%';
+
  
+}
+
+$scope.$watch('cohort',function(){
+
+$scope.recalc(); 
  
 });
   
 $scope.$watch('score',function(){
- $scope.marginforschoolbarcontainer= (100*(((range+1)/2)+$scope.score)/(range+1))-($scope.widthofschoolbar/2);
- $scope.myStyle['margin-left']=   $scope.marginforschoolbarcontainer+'%';
- $scope.myStyle['margin-right']=   (0-$scope.marginforschoolbarcontainer)+'%';
+$scope.recalc(); 
+});
+$scope.$watch('sigma2',function(){
+$scope.recalc(); 
+});
+
+$scope.$watch('sigma',function(){
+$scope.recalc(); 
 });
  
 
