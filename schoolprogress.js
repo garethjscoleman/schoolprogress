@@ -30,10 +30,10 @@ $scope.right75={'width':'17%','float':'left','background-image':'linear-gradient
 $scope.right25={'width':'16%','float':'left','background-image':'linear-gradient(to left, white, rgb(235,235,235))'};
 
 $scope.rleft25={'width':'16%','float':'left','background-image':'linear-gradient(to right, white, rgb(235,0,235))'};
- $scope.rleft75={'width':'17%','float':'left','background-image':'linear-gradient(to right, rgb(235,0,235), rgb(170,0,170))'};
+ $scope.rleft75={'width':'17%','float':'left','border-left-color':'black', 'border-left-style':'solid','border-left-width':'2px','background-image':'linear-gradient(to right, rgb(235,0,235), rgb(170,0,170))'};
 $scope.rleft40={'width':'17%','float':'left','background-image':'linear-gradient(to right, rgb(170,0,170), rgb(130,0,130))'};
 $scope.rright40={'width':'17%','float':'left','background-image':'linear-gradient(to left, rgb(170,0,170), rgb(130,0,130))'};
-$scope.rright75={'width':'17%','float':'left','background-image':'linear-gradient(to left, rgb(235,0,235), rgb(170,0,170))'};
+$scope.rright75={'width':'17%','float':'left','border-right-color':'black', 'border-right-style':'solid','border-right-width':'2px','background-image':'linear-gradient(to left, rgb(235,0,235), rgb(170,0,170))'};
 $scope.rright25={'width':'16%','float':'left','background-image':'linear-gradient(to left, white, rgb(235,0,235))'};
 
  $scope.cohort=25;
