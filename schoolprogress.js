@@ -9,9 +9,14 @@ function SchoolProgressCtrl($scope) {
  $scope.sigma2 = 2*$scope.subject.sigma;
 });
  
- $scope.subjects=[{'name':'Reading','sigma':2.5},
-                  {'name':'Writing','sigma':2.62},
-                  {'name':'Maths','sigma':2.53}];
+/* sigma calcs 
+Reading 5% ot over 4.6 => 4.6/1.64 = sigma = 2.8
+Writing 5% at below 4.8 => 4.8/1.64 = sigma = 2.92
+maths  5% at above 4.3 = 4.3/1.64 = sigma 2.62
+*/
+ $scope.subjects=[{'name':'Reading','sigma':2.8},
+                  {'name':'Writing','sigma':2.92},
+                  {'name':'Maths','sigma':2.62}];
  $scope.subject=$scope.subjects[0];
  
  $scope.numberline=[];
