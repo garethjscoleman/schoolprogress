@@ -6,6 +6,10 @@ function SchoolProgressCtrl($scope) {
  $scope.sigma = 3;
  $scope.sigma2 = 6;
 
+ $scope.subjects=[{'Subjectname':'Reading','subjectsigma':2.5},
+                  {'Subjectname':'Writing','subjectsigma':2.62},
+                  {'Subjectname':'Maths','subjectsigma':2.53}];
+ 
  $scope.numberline=[];
  var iloop=-range/2
  while (iloop<=(range/2)){
