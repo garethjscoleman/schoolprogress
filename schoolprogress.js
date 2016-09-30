@@ -3,12 +3,16 @@ angular.module('school_progress', ['ui.bootstrap']);
 function SchoolProgressCtrl($scope) {
  //always make this even
  var range=20;
- $scope.sigma = 3;
- $scope.sigma2 = 6;
 
+ $scope.$watch('subject',function(){
+ $scope.sigma = $subject.sigma;
+ $scope.sigma2 = 2*$subject.sigma;
+});
+ 
  $scope.subjects=[{'name':'Reading','sigma':2.5},
                   {'name':'Writing','sigma':2.62},
                   {'name':'Maths','sigma':2.53}];
+ $scope.subject=$scope.subjects[0];
  
  $scope.numberline=[];
  var iloop=-range/2
