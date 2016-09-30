@@ -5,8 +5,8 @@ function SchoolProgressCtrl($scope) {
  var range=20;
 
  $scope.$watch('subject',function(){
- $scope.sigma = $subject.sigma;
- $scope.sigma2 = 2*$subject.sigma;
+ $scope.sigma = $scope.subject.sigma;
+ $scope.sigma2 = 2*$scope.subject.sigma;
 });
  
  $scope.subjects=[{'name':'Reading','sigma':2.5},
